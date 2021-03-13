@@ -15,7 +15,15 @@ class MainActivity : AppCompatActivity() {
          val inputId = idEdt.text.toString()
          val inputPassword = pwEdt.text.toString()
 
+//         두 변수를 갖고 조건문 활용
 
+        if(inputId == "admin" && inputPassword == "qwer") {
+            Toast.makeText(this, "관리자입니다", Toast.LENGTH_SHORT).show()
+        }
+
+        else{
+            Toast.makeText(this, "로그인 실패", Toast.LENGTH_SHORT).show()
+        }
 
         }
     }
